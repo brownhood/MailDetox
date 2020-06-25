@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MailDetox</string>
+    <string name="mail_view">MailView</string>
 </resources>
