@@ -1,4 +1,31 @@
 <resources>
     <string name="app_name">MailDetox</string>
     <string name="mail_view">MailView</string>
+    <string name="server_client_id">261309940776-5s5o7vcig7q64dqvsck44nciqghfsqmd.apps.googleusercontent.com</string>
+    <string name="title_text">Google Sign-In\nMailDetox</string>
+
+    <string name="button_google_choosen">Google</string>
+    <!-- Button label -->
+    <string name="sign_out">Sign Out</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="refresh_token">Get Fresh Token</string>
+
+    <!-- Content Description for images -->
+    <string name="desc_google_icon">Google Logo</string>
+
+    <!-- Sign-in status messages -->
+    <string name="signed_in_fmt">Signed in as: %s</string>
+    <string name="signed_in">Signed in</string>
+    <string name="signing_in">Signing in…</string>
+    <string name="signed_out">Signed out</string>
+    <string name="signed_in_err">"Error: please check logs."</string>
+    <string name="error_null_person">
+        Error: Plus.PeopleApi.getCurrentPerson returned null. Ensure that the Google+ API is
+        enabled for your project, you have a properly configured google-services.json file
+        and that your device has an internet connection.
+    </string>
+    <string name="loading">Loading…</string>
+    <string name="auth_code_fmt">Auth Code: %s</string>
+    <string name="id_token_fmt">ID Token: %s</string>
+
 </resources>
