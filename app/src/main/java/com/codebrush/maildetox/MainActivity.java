@@ -46,17 +46,22 @@ public class MainActivity extends AppCompatActivity {
     private static final String CREDENTIALS_FILE_PATH = "./credentials.json";
 
     public static Gmail service = null;
-    String TAG = "signin";
+    String TAG = "MainActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.d(TAG, "onCreate: ");
-        updateUI(service);
+        //updateUI(service);
     }
 
-    private void signIn() throws IOException, GeneralSecurityException {
+    public void googleSignIn(View view){
+        Intent intent = new Intent(this, GoogleSignInActivity.class);
+        startActivity(intent);
+    }
+    /*
+    private void _signIn() throws IOException, GeneralSecurityException {
 //        final NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
         final NetHttpTransport HTTP_TRANSPORT = new com.google.api.client.http.javanet.NetHttpTransport();
         service = new Gmail.Builder(HTTP_TRANSPORT, JSON_FACTORY, getCredentials(HTTP_TRANSPORT))
@@ -87,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
     private void updateUI(Gmail account) {
         if (account == null) {
             try {
-                signIn();
+                _signIn();
             } catch (IOException e) {
                 Log.e(TAG, "onClick: " + e.getLocalizedMessage());
             } catch (GeneralSecurityException e) {
@@ -117,5 +122,5 @@ public class MainActivity extends AppCompatActivity {
             Intent mail = new Intent(this, MailView.class);
             startActivity(mail);
         }
-        }
+        }*/
     }

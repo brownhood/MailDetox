@@ -35,6 +35,13 @@ dependencies {
     implementation 'com.google.oauth-client:google-oauth-client-jetty:1.23.0'
     implementation 'com.google.apis:google-api-services-gmail:v1-rev83-1.23.0'
 
+
+    implementation group: 'com.google.api-client', name: 'google-api-client', version: '1.23.0', {
+        exclude group: 'org.apache.httpcomponents'
+    }
+    implementation group: 'com.google.api-client', name: 'google-api-client-android', version: '1.23.0', {
+        exclude group: 'org.apache.httpcomponents'
+    }
 }
 
 repositories{
