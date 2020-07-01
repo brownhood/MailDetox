@@ -107,10 +107,12 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/disconnect"
-                android:onClick="revokeAccess"
+
                 android:theme="@style/ThemeOverlay.MyDarkButton" />
         </LinearLayout>
 
     </RelativeLayout>
 
 </LinearLayout>
+
+<!-- android:onClick="revokeAccess"  -->

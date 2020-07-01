@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">MailDetox</string>
     <string name="mail_view">MailView</string>
-    <string name="server_client_id">261309940776-5s5o7vcig7q64dqvsck44nciqghfsqmd.apps.googleusercontent.com</string>
+    <string name="server_client_id">Take me on console.developes.google.com</string>
     <string name="title_text">Google Sign-In\nMailDetox</string>
 
     <string name="button_google_choosen">Google</string>

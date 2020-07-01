@@ -67,8 +67,6 @@ public class GoogleSignInActivity extends AppCompatActivity {
     private static final String CREDENTIALS_FILE_PATH = "/credentials.json";
     private static final String TOKENS_DIRECTORY_PATH = "app/src/main/assets/tokens";
 
-
-
     // Bundle key for account object
     private static final String KEY_ACCOUNT = "key_account";
 
@@ -83,6 +81,7 @@ public class GoogleSignInActivity extends AppCompatActivity {
 
     private Account mAccount;
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
